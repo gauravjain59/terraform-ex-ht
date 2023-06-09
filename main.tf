@@ -20,7 +20,7 @@ module "aws_s3" {
   source = "terraform-aws-modules/s3-bucket/aws"
 
   // Generate randome bucket name
-  bucket = "ht-bucket-${lower(random_string.s3_bucket_name.result)}"
+  bucket = "ht-gj-bucket-${lower(random_string.s3_bucket_name.result)}"
 }
 
 resource "random_string" "s3_bucket_name" {
